@@ -38,6 +38,11 @@ To see the flash notification(s), you need to add the following '@include()'.
 ```bash
 @include('notification::message')
 ```
+And if you want the basic styling that comes with the package, also inlcude the following lines:
+```bash
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ asset('assets/css/notification-style.css') }}">
+```
 
 ### available functions
 Creating a notification can be done with the next commands:
