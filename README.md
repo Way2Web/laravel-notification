@@ -33,7 +33,7 @@ php artisan vendor:publish
 ## Using
 
 ### Including the flash message in your view
-To see the flash notification(s), you need to add the following '@include()'.
+To see the flash notification(s), you need to add the following `@include()`.
 
 ```bash
 @include('notification::message')
