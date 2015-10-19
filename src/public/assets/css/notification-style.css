@@ -1,0 +1,16 @@
+.alert {
+    text-align: left;
+}
+.alert-title {
+    font-size: 20px;
+}
+.alert-title.with-list {
+    font-size: 14px;
+    font-weight: bold;
+}
+.icon {
+    text-align: center;
+}
+.glyphicon {
+    font-size: 50px;
+}
