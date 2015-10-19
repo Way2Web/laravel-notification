@@ -1,8 +1,7 @@
 # Notification
-OK
+Flash notification that accepts a array and string.
 
 ## Install
-
 ```bash
 composer require intothesource/notification
 ```
@@ -10,7 +9,7 @@ composer require intothesource/notification
 ## After install
 
 #### ServiceProvider
-Add the following line to "config/app.php"
+Add the following line to "config/app.php".
 
 at "providers":
 
@@ -18,9 +17,31 @@ at "providers":
 IntoTheSource\Notification\NotificationServiceProvider::class,
 ```
 
+And at "aliases":
+
+```bash
+'Notification' => IntoTheSource\Notification\Facade\Notification::class,
+```
+
+#### Publish files
+Run the following command:
+
+```bash
+php artisan vendor:publish
+```
+
 ## Using
 
-Creating a notification can be done with the next commands
+### Including the flash message in your view
+To see the flash notification(s), you need to add the following '@include()'.
+
+```bash
+@include('notification::message')
+```
+
+### available functions
+Creating a notification can be done with the next commands:
+
 ```bash
 Notification::
     - success()
@@ -30,15 +51,14 @@ Notification::
     - overlay() // Bootstrap modal
 ```
 
-You can also add the class "Important" to the alert message, with the following command
+You can also add the class "Important" to the alert message, with the following command:
 
 ```bash
 Notification::error('message', 'title')->important();
 ```
 
 ### Message variables and Title
-
-You can send a message like a string or as a array
+You can send a message as a string or as a array.
 
 ##### Array
 ```bash
@@ -61,15 +81,19 @@ Notification::success([
                 ]);
 ```
 
-
 ##### String
+With title:
+
 ```bash
 Notification::success('First success', 'Title success block');
+```
 
+Without title:
+
+```bash
 Notification::success('First success');
 ```
 
 ##### Title
 
 The last string is the title. You have two options: give a string or leave it blank.
-

@@ -1,7 +1,7 @@
 {
     "name": "intothesource/notification",
     "description": "notifications",
-    "keywords": ["notifications", "notification", "the source", "thesource", "in to the source", "intothesource"],
+    "keywords": ["notifications", "notification", "flash notification", "the source", "thesource", "in to the source", "intothesource"],
     "homepage": "https://github.com/intothesource/notification",
     "license": "BSD-2",
     "authors": [
@@ -22,11 +22,6 @@
     "autoload": {
         "psr-4": {
             "IntoTheSource\\Notification\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "IntoTheSource\\Notification\\Test\\": "tests"
         }
     },
     "scripts": {
