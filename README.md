@@ -168,4 +168,4 @@ When you want to use a [Modal from bootstrap](http://getbootstrap.com/javascript
 ```js
 Notification.overlay( 'Message', 'Title', 'Button text' );
 ```
-NOTE: All the given variables need to be a string.
+####### NOTE: All the given variables need to be a string.
