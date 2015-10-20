@@ -27,7 +27,6 @@ class NotificationServiceProvider extends ServiceProvider
 		/* Place all the files to the correct path */        
         $this->publishes([
             __DIR__ . '/views' => base_path('resources/views/vendor/notification'),
-            __DIR__ . '/config' => config_path(),
             __DIR__ . '/public' => base_path('public'),
         ]);
     }
@@ -35,9 +34,6 @@ class NotificationServiceProvider extends ServiceProvider
 	public function register()
 	{
 		$this->registerNotification();
-		config([
-				'config/notification.php',
-		]);
 	}
 
 	private function registerNotification()

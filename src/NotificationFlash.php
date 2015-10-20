@@ -51,20 +51,6 @@ class NotificationFlash
     }
 
     /**
-     * Flash a success message.
-     *
-     * @param  string|array $message
-     * @param  string $title
-     * @return $this
-     */
-    public function successInstant($message, $title = null)
-    {
-        $this->message($message, $title, 'success', true);
-
-        return $this;
-    }
-
-    /**
      * Flash an error message.
      *
      * @param  string|array $message
@@ -100,15 +86,11 @@ class NotificationFlash
      * @param  string $level
      * @return $this
      */
-    public function message($message, $title, $level = 'info', $flash = false)
+    public function message($message, $title, $level = 'info')
     {
         $this->session->flash('flash_notification.message', $message);
         $this->session->flash('flash_notification.title', $title);
         $this->session->flash('flash_notification.level', $level);
-        
-        if($flash){
-            $this->session->replace(['flash_notification.message' => $message, 'flash_notification.title' => $title, 'flash_notification.level' => $level]);
-        }
 
         return $this;
     }
