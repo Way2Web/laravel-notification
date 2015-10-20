@@ -77,7 +77,7 @@ Notification::error('message', 'title')->important();
 ### Message variables and Title
 You can send a message as a string or as a array.
 
-##### Array
+#### Messages
 ```php
 Notification::success([
                     'First success',
@@ -98,7 +98,9 @@ Notification::success([
                 ]);
 ```
 
-##### String
+#### Title
+The last string is the title. You have two options: give a string or leave it blank.
+
 With title:
 
 ```php
@@ -111,9 +113,6 @@ Without title:
 Notification::success('First success');
 ```
 
-##### Title
-
-The last string is the title. You have two options: give a string or leave it blank.
 
 ## From the view
 You can also use create a notification from the view file, this is usefull when your using a ajax form.
@@ -135,7 +134,7 @@ You can send a message as a string or as a array.
 
 NOTE: The overlay function only accepts strings.
 
-##### Messages
+#### Messages
 The following syntax is used at all functions but NOT FOR: `.overlay()`:
 
 Single message:
@@ -158,14 +157,14 @@ Grouping messages inside a Array of messages:
 Notification.success( ['First message', 'Second message', {'Third message with array': ['First message', 'Second message']}] );
 ```
 
-##### Title
+#### Title
 Adding a title to a notification:
 
 ```js
 Notification.success( 'message', 'The Title goes after the message' );
 ```
 
-##### Important
+#### Important
 Adding the class `important` to your notification is easly done with adding a boolean as last variable:
 
 ```js
