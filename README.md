@@ -74,10 +74,10 @@ You can also add the class "Important" to the alert message, with the following 
 Notification::error('message', 'title')->important();
 ```
 
-### Message variables and Title
+### Message variables
 You can send a message as a string or as a array.
 
-#### Messages
+Syntax:
 ```php
 Notification::success([
                     'First success',
@@ -86,16 +86,9 @@ Notification::success([
                         'Second success'
                     ],
                     'Third success'
-                ], 'Title success block');
-
-Notification::success([
-                    'First success',
-                    'Second success title' => [
-                        'First success',
-                        'Second success'
-                    ],
-                    'Third success'
                 ]);
+
+Notification::success('First success');
 ```
 
 #### Title
