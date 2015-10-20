@@ -104,7 +104,7 @@ Without title:
 Notification::success('First success');
 ```
 
-### Overlay function
+#### Overlay function
 When you want to use a [Modal from bootstrap](http://getbootstrap.com/javascript/#modals) you can do so with the following function and syntax:
 
 ```php
