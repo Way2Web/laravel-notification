@@ -52,7 +52,7 @@ And the javascript:
 ```html
 <script src="{{ asset('assets/js/notification.js') }}"></script>
 ```
-NOTE: You also need the jQuery library.
+###### NOTE: You also need the jQuery library.
 
 ## Usage from the Controller
 
@@ -123,7 +123,7 @@ Notification.
 ### Messages, Title and Important
 You can send a message as a string or as a array.
 
-NOTE: The overlay function only accepts strings.
+###### NOTE: The overlay function only accepts strings.
 
 #### Messages
 The following syntax is used at all functions but NOT FOR: `.overlay()`:
@@ -168,4 +168,4 @@ When you want to use a [Modal from bootstrap](http://getbootstrap.com/javascript
 ```js
 Notification.overlay( 'Message', 'Title', 'Button text' );
 ```
-####### NOTE: All the given variables need to be a string.
+###### NOTE: All the given variables need to be a string.
