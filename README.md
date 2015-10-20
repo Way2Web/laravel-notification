@@ -31,7 +31,7 @@ Run the following command:
 php artisan vendor:publish
 ```
 
-## Using
+## Usage
 
 ### Including the flash message in your view
 To see the flash notification(s), you need to add the following `@include()`.
