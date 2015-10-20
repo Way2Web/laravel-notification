@@ -54,7 +54,7 @@ And the javascript:
 ```
 NOTE: You also need the jQuery library.
 
-## From the Controller
+## Usage from the Controller
 
 ### available functions
 Creating a notification can be done with the next commands:
@@ -74,7 +74,7 @@ You can also add the class "Important" to the alert message, with the following 
 Notification::error('message', 'title')->important();
 ```
 
-### Message variables
+#### Message variables
 You can send a message as a string or as a array.
 
 Syntax:
@@ -95,20 +95,18 @@ Notification::success('First success');
 The last string is the title. You have two options: give a string or leave it blank.
 
 With title:
-
 ```php
 Notification::success('First success', 'Title success block');
 ```
 
 Without title:
-
 ```php
 Notification::success('First success');
 ```
 
 
-## From the view
-You can also use create a notification from the view file, this is usefull when your using a ajax form.
+## Usage from the view
+You can also create a notification from the view file, this is usefull when your using a ajax form.
 
 ### available functions
 Creating a notification can be done with the next commands:
