@@ -72,6 +72,15 @@ var Notification = {
                     html += '<p class="alert-message single">'+value+'</p>';
                 }
             });
+        } else if(jQuery.isPlainObject(message)) {
+            html += '<p class="alert-title with-list">'+Object.getOwnPropertyNames(message).toString()+'</p>';
+            html += '<ul>';
+            for (var m in message){
+                message[m].map(function(string) {
+                     html += '<li>'+string+'</li>';
+                });
+            }
+            html += '</ul>';
         } else {
             html += '<p class="alert-message single">'+message+'</p>';
         }
