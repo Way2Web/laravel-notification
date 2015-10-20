@@ -104,6 +104,14 @@ Without title:
 Notification::success('First success');
 ```
 
+### Overlay function
+When you want to use a [Modal from bootstrap](http://getbootstrap.com/javascript/#modals) you can do so with the following function and syntax:
+
+```php
+Notification::overlay( 'Message', 'Title' );
+```
+###### NOTE: All the given variables need to be a string.
+
 
 ## Usage from the view
 You can also create a notification from the view file, this is usefull when your using a ajax form.
