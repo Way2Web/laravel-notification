@@ -1,3 +1,9 @@
+/**
+ * Notification function
+ * @package notification
+ * @author Gertjan Roke <groke@intothesource.com>
+ */
+
 var Notification = {
 
     success: function(message, title, important)

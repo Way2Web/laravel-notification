@@ -3,8 +3,9 @@
 namespace IntoTheSource\Notification;
 
 /**
- * 
- * @author Gertjan Roke <gjroke@intothesource.com>
+ * NotificationServiceProvider class
+ * @package notification
+ * @author Gertjan Roke <groke@intothesource.com>
  */
 
 use Illuminate\Support\ServiceProvider;

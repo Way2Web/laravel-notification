@@ -2,6 +2,12 @@
 
 namespace IntoTheSource\Notification;
 
+/**
+ * NotificationFlash class
+ * @package notification
+ * @author Gertjan Roke <groke@intothesource.com>
+ */
+
 class NotificationFlash
 {
 
