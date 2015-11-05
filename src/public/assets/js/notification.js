@@ -57,7 +57,7 @@ var Notification = {
         } else {
             important = '';
         }
-        var html = '<div class="alert alert-'+type + important+'"><div class="row"><div class="col-md-12"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>';
+        var html = '<div class="alert alert-'+type + important+'"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>';
 
         if(title) {
             html += '<p class="alert-title">'+title+'</p><hr>';
@@ -90,8 +90,8 @@ var Notification = {
         } else {
             html += '<p class="alert-message single">'+message+'</p>';
         }
+        html += '</div>';
         // adding the html to your screen
-        html += '</div></div></div>';
         $('.notifications').append(html);
     }
 }
