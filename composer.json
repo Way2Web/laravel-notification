@@ -1,8 +1,8 @@
 {
-    "name": "intothesource/notification",
+    "name": "intothesource/laravel-notification",
     "description": "notifications",
-    "keywords": ["notifications", "notification", "the source", "thesource", "in to the source", "intothesource"],
-    "homepage": "https://github.com/intothesource/notification",
+    "keywords": ["laravel", "notifications", "notification", "the source", "thesource", "in to the source", "intothesource"],
+    "homepage": "https://github.com/intothesource/laravel-notification",
     "license": "BSD-2",
     "authors": [
         {
