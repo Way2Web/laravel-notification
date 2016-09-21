@@ -8,21 +8,25 @@ var Notification = {
 
     success: function(message, title, important)
     {
+        title = typeof title !== 'undefined' ? title : 'Success';
         Notification.message(message, title, 'success', important);
     },
 
     warning: function(message, title, important)
     {
+        title = typeof title !== 'undefined' ? title : 'Warning';
         Notification.message(message, title, 'warning', important);
     },
 
     error: function(message, title, important)
     {
+        title = typeof title !== 'undefined' ? title : 'Error';
         Notification.message(message, title, 'danger', important);
     },
 
     info: function(message, title, important)
     {
+        title = typeof title !== 'undefined' ? title : 'Info';
         Notification.message(message, title, 'info', important);
     },
 
