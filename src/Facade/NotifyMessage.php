@@ -4,7 +4,8 @@ namespace IntoTheSource\Notification\Facade;
 
 use Illuminate\Support\Facades\Facade;
 
-class Notification extends Facade {
+class NotifyMessage extends Facade
+{
 
     /**
      * Get the binding in the IoC container
@@ -13,7 +14,7 @@ class Notification extends Facade {
      */
     protected static function getFacadeAccessor()
     {
-        return 'notification';
+        return 'notifyMessage';
     }
 
 } 

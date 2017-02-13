@@ -21,7 +21,7 @@ IntoTheSource\Notification\NotificationServiceProvider::class,
 And at `aliases`:
 
 ```php
-'Notification' => IntoTheSource\Notification\Facade\Notification::class,
+'NotifyMessage' => IntoTheSource\Notification\Facade\NotifyMessage::class,
 ```
 
 #### Publish files
