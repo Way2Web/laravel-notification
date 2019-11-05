@@ -1,9 +1,8 @@
 {
-    "name": "intothesource/laravel-notification",
+    "name": "way2web/laravel-notification",
     "description": "notifications",
-    "keywords": ["laravel", "notifications", "notification", "the source", "thesource", "in to the source", "intothesource"],
-    "homepage": "https://github.com/intothesource/laravel-notification",
-    "license": "BSD-2",
+    "keywords": ["laravel", "notifications", "notification"],
+    "homepage": "https://github.com/Way2Web/laravel-entrance.git",
     "authors": [
         {
             "name": "Gertjan Roke",
@@ -17,16 +16,16 @@
     },
     "require-dev": {
         "phpunit/phpunit" : "4.*",
-        "scrutinizer/ocular": "~1.1"
+        "scrutinizer/ocular": "~1.6"
     },
     "autoload": {
         "psr-4": {
-            "IntoTheSource\\Notification\\": "src"
+            "Way2Web\\Notification\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "IntoTheSource\\Notification\\Test\\": "tests"
+            "Way2Web\\Notification\\Test\\": "tests"
         }
     },
     "scripts": {
