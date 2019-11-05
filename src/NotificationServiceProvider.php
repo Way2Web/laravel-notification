@@ -1,6 +1,6 @@
 <?php
 
-namespace IntoTheSource\Notification;
+namespace Way2Web\Notification;
 
 /**
  * NotificationServiceProvider class
@@ -46,7 +46,7 @@ class NotificationServiceProvider extends ServiceProvider
         );
 
         $this->app->singleton('notifyMessage', function () {
-            return $this->app->make('IntoTheSource\Notification\NotificationFlash');
+            return $this->app->make('Way2Web\Notification\NotificationFlash');
         });
     }
 

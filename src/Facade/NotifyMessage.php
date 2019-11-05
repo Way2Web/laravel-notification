@@ -1,6 +1,6 @@
 <?php
 
-namespace IntoTheSource\Notification\Facade;
+namespace Way2Web\Notification\Facade;
 
 use Illuminate\Support\Facades\Facade;
 

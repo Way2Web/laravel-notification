@@ -1,6 +1,6 @@
 <?php
 
-namespace IntoTheSource\Notification;
+namespace Way2Web\Notification;
 
 /**
  * NotificationFlash class
