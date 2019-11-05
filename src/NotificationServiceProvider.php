@@ -41,8 +41,8 @@ class NotificationServiceProvider extends ServiceProvider
     private function registerNotification()
     {
         $this->app->bind(
-            'IntoTheSource\Notification\SessionStore',
-            'IntoTheSource\Notification\LaravelSessionStore'
+            'Way2Web\Notification\SessionStore',
+            'Way2Web\Notification\LaravelSessionStore'
         );
 
         $this->app->singleton('notifyMessage', function () {
