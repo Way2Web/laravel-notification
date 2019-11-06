@@ -3,14 +3,12 @@
 namespace Way2Web\Notification;
 
 /**
- * NotificationFlash class
- * @package notification
+ * NotificationFlash class.
+ *
  * @author Gertjan Roke <groke@intothesource.com>
  */
-
 class NotificationFlash
 {
-
     /**
      * The session writer.
      *
@@ -23,7 +21,7 @@ class NotificationFlash
      *
      * @param SessionStore $session
      */
-    function __construct(SessionStore $session)
+    public function __construct(SessionStore $session)
     {
         $this->session = $session;
     }
@@ -31,8 +29,9 @@ class NotificationFlash
     /**
      * Flash an information message.
      *
-     * @param  string|array $message
-     * @param  string $title
+     * @param string|array $message
+     * @param string       $title
+     *
      * @return $this
      */
     public function info($message, $title = null)
@@ -45,8 +44,9 @@ class NotificationFlash
     /**
      * Flash a success message.
      *
-     * @param  string|array $message
-     * @param  string $title
+     * @param string|array $message
+     * @param string       $title
+     *
      * @return $this
      */
     public function success($message, $title = null)
@@ -59,8 +59,9 @@ class NotificationFlash
     /**
      * Flash an error message.
      *
-     * @param  string|array $message
-     * @param  string $title
+     * @param string|array $message
+     * @param string       $title
+     *
      * @return $this
      */
     public function error($message, $title = null)
@@ -73,8 +74,9 @@ class NotificationFlash
     /**
      * Flash a warning message.
      *
-     * @param  string|array $message
-     * @param  string $title
+     * @param string|array $message
+     * @param string       $title
+     *
      * @return $this
      */
     public function warning($message, $title = null)
@@ -87,9 +89,10 @@ class NotificationFlash
     /**
      * Flash a general message.
      *
-     * @param  string|array $message
-     * @param  string $title
-     * @param  string $level
+     * @param string|array $message
+     * @param string       $title
+     * @param string       $level
+     *
      * @return $this
      */
     public function message($message, $title, $level = 'info')
@@ -100,12 +103,13 @@ class NotificationFlash
 
         return $this;
     }
-    
-     /**
+
+    /**
      * Flash an overlay modal.
      *
-     * @param  string|array $message
-     * @param  string $title
+     * @param string|array $message
+     * @param string       $title
+     *
      * @return $this
      */
     public function overlay($message, $title = 'Notice')
@@ -113,6 +117,7 @@ class NotificationFlash
         $this->message($message, $title, 'info');
         $this->session->flash('flash_notification.overlay', true);
         $this->session->flash('flash_notification.title', $title);
+
         return $this;
     }
 
@@ -127,5 +132,4 @@ class NotificationFlash
 
         return $this;
     }
-
 }

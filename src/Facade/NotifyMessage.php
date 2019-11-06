@@ -6,9 +6,8 @@ use Illuminate\Support\Facades\Facade;
 
 class NotifyMessage extends Facade
 {
-
     /**
-     * Get the binding in the IoC container
+     * Get the binding in the IoC container.
      *
      * @return string
      */
@@ -16,5 +15,4 @@ class NotifyMessage extends Facade
     {
         return 'notifyMessage';
     }
-
-} 
+}

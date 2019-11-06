@@ -2,19 +2,17 @@
 
 namespace Way2Web\Notification;
 
-/**
+/*
  * NotificationServiceProvider class
  *
  * @package notification
  * @author Gertjan Roke <groke@intothesource.com>
  */
 
-use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
 
 class NotificationServiceProvider extends ServiceProvider
 {
-
     /**
      * Indicates if loading of the provider is deferred.
      *
@@ -26,7 +24,7 @@ class NotificationServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__ . '/views', 'notification');
 
-        /* Place all the files to the correct path */
+        // Place all the files to the correct path
         $this->publishes([
             __DIR__ . '/views'  => base_path('resources/views/vendor/notification'),
             __DIR__ . '/public' => base_path('public'),
@@ -49,5 +47,4 @@ class NotificationServiceProvider extends ServiceProvider
             return $this->app->make('Way2Web\Notification\NotificationFlash');
         });
     }
-
 }

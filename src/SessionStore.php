@@ -4,7 +4,6 @@ namespace Way2Web\Notification;
 
 interface SessionStore
 {
-
     /**
      * Flash a message to the session.
      *
@@ -12,5 +11,4 @@ interface SessionStore
      * @param $data
      */
     public function flash($name, $data);
-
-} 
+}
