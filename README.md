@@ -4,7 +4,7 @@ You can use it from your controller and also in the views.
 
 ## Install
 ```bash
-composer require intothesource/notification
+composer require way2web/laravel-notification
 ```
 
 ## After install
@@ -15,13 +15,13 @@ Add the following line to `config/app.php`.
 at `providers`:
 
 ```php
-IntoTheSource\Notification\NotificationServiceProvider::class,
+Way2Web\Notification\NotificationServiceProvider::class,
 ```
 
 And at `aliases`:
 
 ```php
-'NotifyMessage' => IntoTheSource\Notification\Facade\NotifyMessage::class,
+'NotifyMessage' => Way2Web\Notification\Facade\NotifyMessage::class,
 ```
 
 #### Publish files
